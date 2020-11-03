@@ -16,6 +16,11 @@ app.get('/batman', function(req, res) {
   res.send("<h1>Hello Robin</h1>")
 })
 
+app.get('/about', function(req, res) {
+  // console.log(request);
+  res.send("<h1>About Me</h1><p>My name is Matthew and I love to play guitar!</p>")
+})
+
 app.listen(3000, function() {
   console.log('Server started on port 3000');
 });
